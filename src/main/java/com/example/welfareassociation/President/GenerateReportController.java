@@ -1,11 +1,15 @@
 package com.example.welfareassociation.President;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TableView;
+
 public class GenerateReportController
 {
     @javafx.fxml.FXML
     private TableView reportTableView;
     @javafx.fxml.FXML
-    private ComboBox reportTypeComboBox;
+    private ComboBox<String> reportTypeComboBox;
 
     @javafx.fxml.FXML
     public void initialize() {

@@ -11,7 +11,7 @@ public class ApproveBudgetController
     @javafx.fxml.FXML
     private Text approvalStatusText;
     @javafx.fxml.FXML
-    private TableView<BudgetProposal,String> budgetProposalListTableView;
+    private TableView<BudgetProposalList,String> budgetProposalListTableView;
     @javafx.fxml.FXML
     private TextArea budgetDetailsTextArea;
     @javafx.fxml.FXML

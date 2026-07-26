@@ -6,7 +6,7 @@ import javafx.scene.control.TableView;
 public class ViewReportsController
 {
     @javafx.fxml.FXML
-    private TableView <>reportListTableView;
+    private TableView reportListTableView;
 
     @javafx.fxml.FXML
     public void initialize() {

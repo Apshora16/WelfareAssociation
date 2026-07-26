@@ -1,5 +1,8 @@
 package com.example.welfareassociation.President;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.TableView;
+
 public class ViewScheduleController
 {
     @javafx.fxml.FXML
