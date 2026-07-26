@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.welfareassociation.treasurer.FoundmanagementController">
+   <children>
+      <Label layoutX="232.0" layoutY="35.0" text="Fund Management" />
+      <Label layoutX="78.0" layoutY="95.0" text="Current Balance" />
+      <TextField fx:id="currentbalanceTextField" layoutX="177.0" layoutY="91.0" />
+      <Label layoutX="78.0" layoutY="155.0" text="Transaction Type" />
+      <ComboBox fx:id="transactiontypeComboBox" layoutX="176.0" layoutY="151.0" prefWidth="150.0" />
+      <Label layoutX="109.0" layoutY="209.0" text="Amount" />
+      <TextField fx:id="amountTextField" layoutX="177.0" layoutY="205.0" />
+      <Button layoutX="93.0" layoutY="253.0" mnemonicParsing="false" onAction="#handlesavetransaction" text="Save Transaction" />
+      <Label layoutX="86.0" layoutY="304.0" text="Updated Balance" />
+      <TextField fx:id="updatedbalanceTextField" layoutX="198.0" layoutY="300.0" />
+   </children>
+</AnchorPane>
