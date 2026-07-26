@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="535.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.welfareassociation.Systemadministrator.EmployeeDatabase">
+   <children>
+      <Button layoutX="32.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToDashboardButtonOA" prefHeight="44.0" prefWidth="74.0" text="Back To Dashboard" textAlignment="CENTER" wrapText="true" />
+      <Label alignment="CENTER" layoutX="230.0" layoutY="13.0" prefHeight="44.0" prefWidth="203.0" text="Maintain Employee Darabase" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="30.0" layoutY="72.0" prefHeight="28.0" prefWidth="74.0" text="Search:" textAlignment="CENTER" />
+      <TextField fx:id="searchTF" layoutX="99.0" layoutY="73.0" />
+      <Button layoutX="303.0" layoutY="72.0" mnemonicParsing="false" onAction="#searchButtonOA" prefHeight="28.0" prefWidth="57.0" text="Search" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="389.0" layoutY="72.0" mnemonicParsing="false" onAction="#refreshButtonOA" prefHeight="28.0" prefWidth="57.0" text="Refresh" textAlignment="CENTER" wrapText="true" />
+      <TableView fx:id="employeeTableView" layoutX="35.0" layoutY="113.0" prefHeight="157.0" prefWidth="579.0">
+        <columns>
+          <TableColumn prefWidth="111.33333969116211" text="ID" />
+          <TableColumn prefWidth="111.33332824707031" text="Name" />
+            <TableColumn prefWidth="108.66668701171875" text="Department" />
+            <TableColumn prefWidth="124.6666259765625" text="Phone" />
+            <TableColumn prefWidth="124.66665649414062" text="Email" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="223.0" layoutY="274.0" prefHeight="28.0" prefWidth="203.0" text="Edit Employee Details" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="34.0" layoutY="305.0" prefHeight="28.0" prefWidth="57.0" text="Name:" textAlignment="CENTER" />
+      <Label alignment="CENTER" layoutX="40.0" layoutY="337.0" prefHeight="28.0" prefWidth="74.0" text="Department:" textAlignment="CENTER" />
+      <Label alignment="CENTER" layoutX="34.0" layoutY="370.0" prefHeight="28.0" prefWidth="57.0" text="Phone:" textAlignment="CENTER" />
+      <Label alignment="CENTER" layoutX="31.0" layoutY="402.0" prefHeight="28.0" prefWidth="57.0" text="Email:" textAlignment="CENTER" />
+      <Label alignment="CENTER" layoutX="32.0" layoutY="435.0" prefHeight="28.0" prefWidth="57.0" text="Status:" textAlignment="CENTER" />
+      <TextField fx:id="nameTF" layoutX="125.0" layoutY="307.0" />
+      <TextField fx:id="phoneTF" layoutX="125.0" layoutY="371.0" />
+      <TextField fx:id="emailTF" layoutX="125.0" layoutY="403.0" />
+      <ComboBox fx:id="departmentComboBox" layoutX="125.0" layoutY="339.0" prefWidth="150.0" />
+      <ComboBox fx:id="statusComboBox" layoutX="125.0" layoutY="436.0" prefWidth="150.0" />
+      <Button layoutX="336.0" layoutY="435.0" mnemonicParsing="false" onAction="#updateButtonOA" prefHeight="28.0" prefWidth="57.0" text="Update" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="417.0" layoutY="435.0" mnemonicParsing="false" onAction="#clearButtonOA" prefHeight="28.0" prefWidth="51.0" text="Clear" textAlignment="CENTER" wrapText="true" />
+      <Label fx:id="statusLabel" alignment="CENTER" layoutX="214.0" layoutY="472.0" prefHeight="28.0" prefWidth="203.0" text="Status Label" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
