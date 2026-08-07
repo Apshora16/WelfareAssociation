@@ -1,6 +1,6 @@
 package com.example.welfareassociation.GeneralSecretary;
 
-public class WelfareProgramControllerController
+public class WelfareProgramController
 {
     @javafx.fxml.FXML
     public void initialize() {

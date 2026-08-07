@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.welfareassociation.hrmanager.WelfareVerificationController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="590.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.welfareassociation.HRManager.WelfareVerificationController">
+   <children>
+      <Text layoutX="226.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welfare Applicant Verification " />
+      <Text layoutX="59.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Applicant ID - " />
+      <Text layoutX="59.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Applicant Name - " />
+      <Text layoutX="59.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Status - " />
+      <Text layoutX="59.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attendance - " />
+      <Text layoutX="59.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Service History - " />
+      <Text layoutX="59.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Documents - " />
+      <Text layoutX="53.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Verification Status - " />
+      <Text layoutX="59.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remarks - " />
+      <TextField layoutX="176.0" layoutY="69.0" />
+      <TextField layoutX="176.0" layoutY="106.0" />
+      <TextField layoutX="176.0" layoutY="182.0" />
+      <TextArea layoutX="176.0" layoutY="215.0" prefHeight="50.0" prefWidth="199.0" />
+      <TextArea layoutX="176.0" layoutY="270.0" prefHeight="50.0" prefWidth="199.0" />
+      <TextArea layoutX="176.0" layoutY="387.0" prefHeight="50.0" prefWidth="199.0" />
+      <ComboBox layoutX="176.0" layoutY="143.0" prefWidth="150.0" promptText="Active" />
+      <RadioButton layoutX="176.0" layoutY="335.0" mnemonicParsing="false" text="Approved " />
+      <RadioButton layoutX="300.0" layoutY="335.0" mnemonicParsing="false" text="Rejected " />
+      <Button layoutX="632.0" layoutY="33.0" mnemonicParsing="false" text="Logout " />
+      <Button layoutX="176.0" layoutY="456.0" mnemonicParsing="false" text="Verify " />
+      <Button layoutX="335.0" layoutY="456.0" mnemonicParsing="false" text="Generate Report " />
+      <Button layoutX="142.0" layoutY="496.0" mnemonicParsing="false" text="Save " />
+      <Button layoutX="240.0" layoutY="496.0" mnemonicParsing="false" text="Clear" />
+      <Button layoutX="345.0" layoutY="496.0" mnemonicParsing="false" text="Cancel" />
+      <Text layoutX="59.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status - " />
+      <Label layoutX="135.0" layoutY="532.0" text="Ready " />
+   </children>
 </AnchorPane>
