@@ -12,23 +12,21 @@
    <children>
       <Text layoutX="172.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Process Official Documents " textAlignment="CENTER" wrappingWidth="250.283203125" />
       <Text layoutX="44.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Document - " />
-      <TextField layoutX="173.0" layoutY="107.0" />
+      <TextField fx:id="documentOwnerTextField" layoutX="173.0" layoutY="107.0" />
       <Text layoutX="44.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Document Owner - " />
       <Text layoutX="43.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Document Details - " />
       <Text layoutX="38.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="79.033203125" />
-      <Text layoutX="44.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status - " />
-      <Button layoutX="618.0" layoutY="24.0" mnemonicParsing="false" text="Logout" />
-      <Button layoutX="120.0" layoutY="438.0" mnemonicParsing="false" text="Ready " />
-      <Button layoutX="92.0" layoutY="371.0" mnemonicParsing="false" text="Process" />
-      <Button layoutX="198.0" layoutY="371.0" mnemonicParsing="false" text="Save" />
-      <Button layoutX="307.0" layoutY="371.0" mnemonicParsing="false" text="Clear " />
-      <Button layoutX="430.0" layoutY="371.0" mnemonicParsing="false" text="Cancel" />
-      <TextArea layoutX="160.0" layoutY="289.0" prefHeight="57.0" prefWidth="239.0" />
-      <ComboBox layoutX="173.0" layoutY="62.0" prefWidth="150.0" />
-      <TextArea layoutX="171.0" layoutY="153.0" prefHeight="74.0" prefWidth="272.0" />
+      <Button layoutX="618.0" layoutY="24.0" mnemonicParsing="false" onAction="#handleLogout" text="Logout" />
+      <Button layoutX="92.0" layoutY="371.0" mnemonicParsing="false" onAction="#handleProcess" text="Process" />
+      <Button layoutX="198.0" layoutY="371.0" mnemonicParsing="false" onAction="#handleSave" text="Save" />
+      <Button layoutX="307.0" layoutY="371.0" mnemonicParsing="false" onAction="#handleClear" text="Clear " />
+      <Button layoutX="430.0" layoutY="371.0" mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+      <TextArea fx:id="remarksTextArea" layoutX="160.0" layoutY="289.0" prefHeight="57.0" prefWidth="239.0" />
+      <ComboBox fx:id="documentComboBox" layoutX="173.0" layoutY="62.0" prefWidth="150.0" />
+      <TextArea fx:id="documentDetailsTextArea" layoutX="171.0" layoutY="153.0" prefHeight="74.0" prefWidth="272.0" />
       <Text layoutX="44.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remarks - " />
       <Text layoutX="49.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Decision - " />
-      <RadioButton layoutX="160.0" layoutY="244.0" mnemonicParsing="false" text="Approve" />
-      <RadioButton layoutX="280.0" layoutY="244.0" mnemonicParsing="false" text="Reject " />
+      <RadioButton fx:id="approveRadioButton" layoutX="160.0" layoutY="244.0" mnemonicParsing="false" text="Approve" />
+      <RadioButton fx:id="rejectRadioButton" layoutX="280.0" layoutY="244.0" mnemonicParsing="false" text="Reject " />
    </children>
 </AnchorPane>

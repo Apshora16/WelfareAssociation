@@ -2,7 +2,6 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
@@ -17,17 +16,15 @@
       <Text layoutX="72.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assign Task - " />
       <Text layoutX="71.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deadline - " />
       <Text layoutX="72.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Task Progress - " wrappingWidth="100.1953125" />
-      <Text layoutX="78.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status - " />
-      <Button layoutX="593.0" layoutY="26.0" mnemonicParsing="false" text="Logout " />
-      <Button layoutX="143.0" layoutY="337.0" mnemonicParsing="false" text="Save " />
-      <Button layoutX="248.0" layoutY="337.0" mnemonicParsing="false" text="Clear " />
-      <Button layoutX="352.0" layoutY="337.0" mnemonicParsing="false" text="Cancel " />
-      <Label layoutX="154.0" layoutY="398.0" text="Ready " />
-      <DatePicker layoutX="205.0" layoutY="224.0" />
-      <TextField layoutX="205.0" layoutY="68.0" />
-      <TextField layoutX="205.0" layoutY="112.0" />
-      <TextArea layoutX="203.0" layoutY="149.0" prefHeight="63.0" prefWidth="174.0" />
-      <RadioButton layoutX="205.0" layoutY="277.0" mnemonicParsing="false" text="Assign Task " />
-      <RadioButton layoutX="311.0" layoutY="277.0" mnemonicParsing="false" text="Generate Report " />
+      <Button fx:id="handleLogout" layoutX="593.0" layoutY="26.0" mnemonicParsing="false" text="Logout " />
+      <Button fx:id="handleSave" layoutX="143.0" layoutY="337.0" mnemonicParsing="false" text="Save " />
+      <Button layoutX="248.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleClear" text="Clear " />
+      <Button layoutX="352.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleCancel" text="Cancel " />
+      <DatePicker fx:id="deadlineDatePicker" layoutX="205.0" layoutY="224.0" />
+      <TextField fx:id="departmentTextField" layoutX="205.0" layoutY="68.0" />
+      <TextField fx:id="departmentStatusTextField" layoutX="205.0" layoutY="112.0" />
+      <TextArea fx:id="assignTaskTextArea" layoutX="203.0" layoutY="149.0" prefHeight="63.0" prefWidth="174.0" />
+      <RadioButton fx:id="assignTaskRadioButton" layoutX="205.0" layoutY="277.0" mnemonicParsing="false" text="Assign Task " />
+      <RadioButton fx:id="generateReportRadioButton" layoutX="311.0" layoutY="277.0" mnemonicParsing="false" text="Generate Report " />
    </children>
 </AnchorPane>

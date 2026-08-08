@@ -2,7 +2,6 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -14,20 +13,18 @@
       <Text layoutX="52.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Announcement Title - " />
       <Text layoutX="47.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Announcement Details -" />
       <Text layoutX="52.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Target Audience - " />
-      <TextField layoutX="206.0" layoutY="74.0" />
-      <TextField layoutX="207.0" layoutY="229.0" />
+      <TextField fx:id="announcementTitleTextField" layoutX="206.0" layoutY="74.0" />
+      <TextField fx:id="attachmentTextField" layoutX="207.0" layoutY="229.0" />
       <Text layoutX="52.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attachment (option) - " />
-      <TextArea layoutX="144.0" layoutY="293.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="83.0" prefWidth="275.0" text="Announcement preview will appear here &#10;" />
-      <Button layoutX="115.0" layoutY="384.0" mnemonicParsing="false" text="Preview" />
-      <Button layoutX="293.0" layoutY="384.0" mnemonicParsing="false" text="Clear " />
-      <Button layoutX="374.0" layoutY="384.0" mnemonicParsing="false" text="Cancel " />
-      <Button layoutX="571.0" layoutY="37.0" mnemonicParsing="false" text="Logout" />
-      <Text layoutX="52.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status - " />
-      <Label layoutX="115.0" layoutY="426.0" text="Ready " />
-      <ComboBox layoutX="207.0" layoutY="184.0" prefWidth="150.0" />
-      <Button layoutX="204.0" layoutY="384.0" mnemonicParsing="false" text="Publish" />
+      <TextArea fx:id="announcementPreviewTextArea" layoutX="144.0" layoutY="293.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="83.0" prefWidth="275.0" text="Announcement preview will appear here &#10;" />
+      <Button fx:id="handlePreview" layoutX="115.0" layoutY="384.0" mnemonicParsing="false" text="Preview" />
+      <Button fx:id="handleClear" layoutX="293.0" layoutY="384.0" mnemonicParsing="false" text="Clear " />
+      <Button fx:id="handleCancel" layoutX="374.0" layoutY="384.0" mnemonicParsing="false" text="Cancel " />
+      <Button fx:id="handleLogout" layoutX="571.0" layoutY="37.0" mnemonicParsing="false" text="Logout" />
+      <ComboBox fx:id="targetAudienceComboBox" layoutX="207.0" layoutY="184.0" prefWidth="150.0" />
+      <Button fx:id="handlePublish" layoutX="204.0" layoutY="384.0" mnemonicParsing="false" text="Publish" />
       <Text layoutX="239.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preview" />
-      <Button layoutX="385.0" layoutY="229.0" mnemonicParsing="false" text="Browse" />
-      <TextArea layoutX="209.0" layoutY="120.0" prefHeight="1.0" prefWidth="191.0" />
+      <Button fx:id="browseButton" layoutX="385.0" layoutY="229.0" mnemonicParsing="false" text="Browse" />
+      <TextArea fx:id="announcementDetailsTextArea" layoutX="209.0" layoutY="120.0" prefHeight="1.0" prefWidth="191.0" />
    </children>
 </AnchorPane>
