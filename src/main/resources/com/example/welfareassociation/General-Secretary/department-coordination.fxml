@@ -1,33 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="570.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.welfareassociation.generalsecretary.DepartmentCoordinationController">
+<AnchorPane prefHeight="570.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.welfareassociation.GeneralSecretary.DepartmentCoordinationController">
    <children>
-      <Text layoutX="213.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Welfare Program " textAlignment="CENTER" wrappingWidth="197.283203125" />
-      <Text layoutX="72.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program Name - " />
-      <Text layoutX="72.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description - " />
-      <Text layoutX="72.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eligibility Criteria - " />
-      <Text layoutX="72.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deadline - " />
-      <Text layoutX="72.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assign Welfare Officers - " wrappingWidth="100.1953125" />
-      <Text layoutX="79.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status - " />
-      <Button layoutX="593.0" layoutY="26.0" mnemonicParsing="false" text="Logout " />
-      <Button layoutX="67.0" layoutY="324.0" mnemonicParsing="false" text="Create Program" />
-      <Button layoutX="194.0" layoutY="324.0" mnemonicParsing="false" text="Publish Program " />
-      <Button layoutX="328.0" layoutY="324.0" mnemonicParsing="false" text="Clear " />
-      <Button layoutX="410.0" layoutY="324.0" mnemonicParsing="false" text="Cancel " />
-      <Label layoutX="150.0" layoutY="398.0" text="Ready " />
-      <DatePicker layoutX="143.0" layoutY="203.0" />
-      <ComboBox layoutX="178.0" layoutY="250.0" prefWidth="150.0" />
-      <TextField layoutX="179.0" layoutY="76.0" />
-      <TextField layoutX="179.0" layoutY="112.0" />
-      <TextField layoutX="179.0" layoutY="159.0" />
+      <Text layoutX="213.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coordinate Departments " textAlignment="CENTER" wrappingWidth="197.283203125" />
+      <Text layoutX="72.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department - " />
+      <Text layoutX="72.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department Status - " />
+      <Text layoutX="72.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assign Task - " />
+      <Text layoutX="71.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deadline - " />
+      <Text layoutX="72.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Task Progress - " wrappingWidth="100.1953125" />
+      <Button fx:id="handleLogout" layoutX="593.0" layoutY="26.0" mnemonicParsing="false" text="Logout " />
+      <Button fx:id="handleSave" layoutX="143.0" layoutY="337.0" mnemonicParsing="false" text="Save " />
+      <Button layoutX="248.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleClear" text="Clear " />
+      <Button layoutX="352.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleCancel" text="Cancel " />
+      <DatePicker fx:id="deadlineDatePicker" layoutX="205.0" layoutY="224.0" />
+      <TextField fx:id="departmentTextField" layoutX="205.0" layoutY="68.0" />
+      <TextField fx:id="departmentStatusTextField" layoutX="205.0" layoutY="112.0" />
+      <TextArea fx:id="assignTaskTextArea" layoutX="203.0" layoutY="149.0" prefHeight="63.0" prefWidth="174.0" />
+      <RadioButton fx:id="assignTaskRadioButton" layoutX="205.0" layoutY="277.0" mnemonicParsing="false" text="Assign Task " />
+      <RadioButton fx:id="generateReportRadioButton" layoutX="311.0" layoutY="277.0" mnemonicParsing="false" text="Generate Report " />
    </children>
 </AnchorPane>
