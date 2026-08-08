@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.welfareassociation.Employee.AttendanceRecord"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="504.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.welfareassociation.Employee.AttendanceRecordController">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToDashboardButtonOA" prefHeight="43.0" prefWidth="78.0" text="Back To Dashboard" textAlignment="CENTER" wrapText="true" />
+      <Label layoutX="227.0" layoutY="10.0" text="View Attendance Record">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="100.0" text="From:" />
+      <Label layoutX="302.0" layoutY="100.0" text="To:" />
+      <Button layoutX="524.0" layoutY="96.0" mnemonicParsing="false" onAction="#viewButtonOA" text="View" />
+      <DatePicker fx:id="fromDatePicker" layoutX="114.0" layoutY="96.0" />
+      <DatePicker fx:id="toDatePicker" layoutX="323.0" layoutY="96.0" />
+      <TableView fx:id="attendanceTableView" layoutX="114.0" layoutY="136.0" prefHeight="200.0" prefWidth="451.0">
+        <columns>
+          <TableColumn fx:id="dateColumn" prefWidth="88.66661834716797" text="Date" />
+          <TableColumn fx:id="checkInColumn" prefWidth="87.33338928222656" text="Check In" />
+            <TableColumn fx:id="checkOutColumn" prefWidth="95.33331298828125" text="Check Out" />
+            <TableColumn fx:id="statusColumn" prefWidth="86.66668701171875" text="Status" />
+            <TableColumn fx:id="hoursColumn" prefWidth="93.33328247070312" text="Hours" />
+        </columns>
+      </TableView>
+      <Label fx:id="summaryLabel" layoutX="114.0" layoutY="352.0" text="Total Hours This Month:" />
+      <Button layoutX="114.0" layoutY="379.0" mnemonicParsing="false" onAction="#correctionButtonOA" prefHeight="43.0" prefWidth="78.0" text="Request Correction" textAlignment="CENTER" wrapText="true" />
+      <Label fx:id="statusLabel" layoutX="309.0" layoutY="432.0" text="Status" />
+      <Button layoutX="565.0" layoutY="18.0" mnemonicParsing="false" onAction="#logoutButtonOA" text="Logout" />
+   </children>
 </AnchorPane>

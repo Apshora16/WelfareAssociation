@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="607.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.welfareassociation.Systemadministrator.MonitorActivities">
+<AnchorPane prefHeight="607.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.welfareassociation.Systemadministrator.MonitorActivitiesController">
    <children>
       <Button layoutX="23.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToDashboardButtonOA" prefHeight="54.0" prefWidth="76.0" text="Back To Dashboard" textAlignment="CENTER" wrapText="true" />
       <Label alignment="CENTER" layoutX="247.0" layoutY="10.0" prefHeight="17.0" prefWidth="179.0" text="Monitor System Activites">
@@ -31,5 +31,6 @@
       <Label fx:id="completeLabel" layoutX="323.0" layoutY="513.0" text="Complete" />
       <Text layoutX="314.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitoring" />
       <Line endX="100.0" layoutX="349.0" layoutY="367.0" startX="-100.0" />
+      <Button layoutX="593.0" layoutY="18.0" mnemonicParsing="false" onAction="#logoutButtonOA" text="Logout" />
    </children>
 </AnchorPane>

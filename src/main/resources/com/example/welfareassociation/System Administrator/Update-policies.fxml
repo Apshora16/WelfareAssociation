@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.welfareassociation.Systemadministrator.UpdatePolicies"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="515.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.welfareassociation.Systemadministrator.UpdatePoliciesController">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToDashboardButtonOA" prefHeight="44.0" prefWidth="75.0" text="Back To Dashboard" textAlignment="CENTER" wrapText="true" />
+      <Label layoutX="244.0" layoutY="11.0" text="Update Welfare Policies">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="226.0" layoutY="67.0" text=" Welfare Policy Management" />
+      <Label layoutX="63.0" layoutY="104.0" text=" Policy Documents:" />
+      <TextArea fx:id="policyDocumentTextArea" layoutX="63.0" layoutY="125.0" prefHeight="153.0" prefWidth="521.0" />
+      <Label layoutX="71.0" layoutY="291.0" text="Policy Status:" />
+      <ComboBox fx:id="policyStatusComboBox" layoutX="149.0" layoutY="287.0" prefHeight="25.0" prefWidth="165.0" />
+      <Label layoutX="70.0" layoutY="323.0" text="Effective Date:" />
+      <DatePicker fx:id="effectiveDatePicker" layoutX="149.0" layoutY="319.0" prefHeight="25.0" prefWidth="165.0" />
+      <Button layoutX="152.0" layoutY="360.0" mnemonicParsing="false" onAction="#applyChangesButtonOA" prefHeight="44.0" prefWidth="62.0" text="Apply Changes" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="241.0" layoutY="370.0" mnemonicParsing="false" onAction="#rejectedButtonOA" text="Rejected" />
+      <Button layoutX="334.0" layoutY="362.0" mnemonicParsing="false" onAction="#generateButtonOA" prefHeight="44.0" prefWidth="69.0" text="Generate Report" textAlignment="CENTER" wrapText="true" />
+      <Label fx:id="statusLabel" layoutX="275.0" layoutY="437.0" text="Status" />
+      <Button layoutX="542.0" layoutY="23.0" mnemonicParsing="false" onAction="#logoutButtonOA" text="Logout" />
+   </children>
 </AnchorPane>
