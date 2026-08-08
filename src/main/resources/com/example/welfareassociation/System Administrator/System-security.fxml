@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.welfareassociation.Systemadministrator.SystemSecurity"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="550.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.welfareassociation.Systemadministrator.SystemSecurityController">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToDashboardButtonOA" prefHeight="49.0" prefWidth="74.0" text="Back To Dashboard" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="609.0" layoutY="14.0" mnemonicParsing="false" onAction="#logoutButtonOA" text="Logout" />
+      <Label layoutX="277.0" layoutY="18.0" text="System Security">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="85.0" text="Security Overview">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="securityStatusLabel" layoutX="80.0" layoutY="118.0" text="Security Status         :" />
+      <Label fx:id="lastScanLabel" layoutX="80.0" layoutY="151.0" text="Last Scan                  :" />
+      <Label fx:id="totalUsersLabel" layoutX="80.0" layoutY="183.0" text="Total Users               :" />
+      <Label fx:id="activeSessionsLabel" layoutX="80.0" layoutY="216.0" text="Active Sessions         :" />
+      <Label layoutX="78.0" layoutY="275.0" text="Access Logs              :" />
+      <ListView fx:id="accessLogsListView" layoutX="200.0" layoutY="275.0" prefHeight="122.0" prefWidth="283.0" />
+      <Button layoutX="260.0" layoutY="415.0" mnemonicParsing="false" onAction="#scanButtonOA" prefHeight="49.0" prefWidth="64.0" text="Scan System" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="364.0" layoutY="415.0" mnemonicParsing="false" onAction="#updateButtonOA" prefHeight="49.0" prefWidth="64.0" text="Update Security" textAlignment="CENTER" wrapText="true" />
+      <Label fx:id="statusLabel" layoutX="292.0" layoutY="492.0" text="Status" />
+   </children>
 </AnchorPane>

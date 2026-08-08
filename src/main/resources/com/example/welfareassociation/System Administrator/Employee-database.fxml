@@ -9,11 +9,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="535.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.welfareassociation.Systemadministrator.EmployeeDatabase">
+<AnchorPane prefHeight="535.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.welfareassociation.Systemadministrator.EmployeeDatabaseController">
    <children>
       <Button layoutX="32.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToDashboardButtonOA" prefHeight="44.0" prefWidth="74.0" text="Back To Dashboard" textAlignment="CENTER" wrapText="true" />
-      <Label alignment="CENTER" layoutX="230.0" layoutY="13.0" prefHeight="44.0" prefWidth="203.0" text="Maintain Employee Darabase" textAlignment="CENTER">
+      <Label alignment="CENTER" layoutX="230.0" layoutY="13.0" prefHeight="44.0" prefWidth="203.0" text="Maintain Employee Database" textAlignment="CENTER">
          <font>
             <Font size="15.0" />
          </font>
@@ -24,11 +23,11 @@
       <Button layoutX="389.0" layoutY="72.0" mnemonicParsing="false" onAction="#refreshButtonOA" prefHeight="28.0" prefWidth="57.0" text="Refresh" textAlignment="CENTER" wrapText="true" />
       <TableView fx:id="employeeTableView" layoutX="35.0" layoutY="113.0" prefHeight="157.0" prefWidth="579.0">
         <columns>
-          <TableColumn prefWidth="111.33333969116211" text="ID" />
-          <TableColumn prefWidth="111.33332824707031" text="Name" />
-            <TableColumn prefWidth="108.66668701171875" text="Department" />
-            <TableColumn prefWidth="124.6666259765625" text="Phone" />
-            <TableColumn prefWidth="124.66665649414062" text="Email" />
+          <TableColumn fx:id="idCol" prefWidth="111.33333969116211" text="ID" />
+          <TableColumn fx:id="nameCol" prefWidth="111.33332824707031" text="Name" />
+            <TableColumn fx:id="departmentCol" prefWidth="108.66668701171875" text="Department" />
+            <TableColumn fx:id="phoneCol" prefWidth="124.6666259765625" text="Phone" />
+            <TableColumn fx:id="emailCol" prefWidth="124.66665649414062" text="Email" />
         </columns>
       </TableView>
       <Label alignment="CENTER" layoutX="223.0" layoutY="274.0" prefHeight="28.0" prefWidth="203.0" text="Edit Employee Details" textAlignment="CENTER">
@@ -49,5 +48,6 @@
       <Button layoutX="336.0" layoutY="435.0" mnemonicParsing="false" onAction="#updateButtonOA" prefHeight="28.0" prefWidth="57.0" text="Update" textAlignment="CENTER" wrapText="true" />
       <Button layoutX="417.0" layoutY="435.0" mnemonicParsing="false" onAction="#clearButtonOA" prefHeight="28.0" prefWidth="51.0" text="Clear" textAlignment="CENTER" wrapText="true" />
       <Label fx:id="statusLabel" alignment="CENTER" layoutX="214.0" layoutY="472.0" prefHeight="28.0" prefWidth="203.0" text="Status Label" textAlignment="CENTER" />
+      <Button layoutX="556.0" layoutY="21.0" mnemonicParsing="false" onAction="#logoutButtonOA" prefHeight="28.0" prefWidth="57.0" text="Logout" textAlignment="CENTER" wrapText="true" />
    </children>
 </AnchorPane>
